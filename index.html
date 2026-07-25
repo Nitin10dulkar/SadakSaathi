@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover" />
-<title>SadakSaathi — Report a Violation</title>
+<title>RuleCam — Report a Violation</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Archivo:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 <style>
@@ -305,7 +305,7 @@
   <div class="topbar">
     <div class="brand">
       <div class="brand-mark">S</div>
-      <div class="brand-name">Sadak<span>Saathi</span></div>
+      <div class="brand-name">Rule<span>Cam</span></div>
     </div>
     <div class="demo-pill">Demo build</div>
   </div>
@@ -404,7 +404,7 @@
       <div class="ticket">
         <div class="ticket-stamp">Draft</div>
         <div class="ticket-top">
-          <div class="ticket-eyebrow">SadakSaathi Citizen Report</div>
+          <div class="ticket-eyebrow">RuleCam Citizen Report</div>
           <div class="ticket-id" id="ticket-id"></div>
         </div>
         <img class="ticket-photo" id="ticket-photo" alt="Violation evidence" />
@@ -713,7 +713,7 @@ function renderSharePreview(){
   const loc = (currentReport.lat && currentReport.lng) ? `${currentReport.lat.toFixed(4)}, ${currentReport.lng.toFixed(4)}` : 'location unavailable';
   const when = currentReport.capturedAt ? new Date(currentReport.capturedAt).toLocaleString('en-IN', {dateStyle:'medium', timeStyle:'short'}) : '';
 
-  const text = `${handle} Reporting a traffic violation.\nVehicle: ${currentReport.plate || 'plate under verification'}\nViolation: ${tagLine}\nWhen: ${when}\nWhere: ${loc}\n${currentReport.description ? 'Details: ' + currentReport.description + '\n' : ''}Evidence photo attached. #RoadSafety #SadakSaathi`;
+  const text = `${handle} Reporting a traffic violation.\nVehicle: ${currentReport.plate || 'plate under verification'}\nViolation: ${tagLine}\nWhen: ${when}\nWhere: ${loc}\n${currentReport.description ? 'Details: ' + currentReport.description + '\n' : ''}Evidence photo attached. #RoadSafety #RuleCam`;
 
   document.getElementById('share-preview').textContent = text;
 }
